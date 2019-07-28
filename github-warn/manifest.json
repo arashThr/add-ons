@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Github-Warn",
+  "version": "1.0.1",
+  "developer": {
+    "name": "Arash Thr",
+    "url": "https://twitter.com/arashThr"
+  },
+
+  "description": "Removes Github warning banner for Iranian users.",
+
+  "icons": {
+    "48": "icons/git-warn-48.png",
+    "96": "icons/git-warn-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "css": ["github-warn.css"],
+      "run_at" : "document_start"
+    }
+  ]
+
+}
