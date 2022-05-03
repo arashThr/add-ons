@@ -1,0 +1,19 @@
+{
+
+  "description": "Make twitter deck more pleasant",
+  "manifest_version": 2,
+  "name": "Fix Timeline",
+  "version": "1.0",
+  "homepage_url": "https://github.com/arashThr/add-ons/twitter_deck_timeline",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://tweetdeck.twitter.com/"],
+      "js": ["twitter_deck_timeline.js"],
+      "run_at": "document_start"
+    }
+  ]
+
+}
